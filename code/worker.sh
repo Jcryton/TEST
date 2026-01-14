@@ -57,9 +57,9 @@ fi
 echo "URL: $URL"
 ls -la
 
-#FILENAME=BeingTested.AppImage
+FILENAME=BeingTested.AppImage
 if [ ! -e "$FILENAME" ] ; then
-  #wget -c -nv "$URL" -O "$FILENAME" --no-check-certificate
+  wget -c -nv "$URL" -O "$FILENAME" --no-check-certificate
 fi
 FILENAME=ironwail-20250213-0.8.0-x86_64.AppImage
 
