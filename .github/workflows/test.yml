@@ -2,14 +2,9 @@ name: Test
 
 on:
   push:
-    branches:
-      # Do not build PRs twice
-      - 'main'
-    paths:
-      - 'data/**'
+    branches: [ "main" ]
   pull_request:
-    paths:
-      - 'data/**'
+    branches: [ "main" ] 
 
 env:
   DISPLAY: :99
