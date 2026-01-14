@@ -327,8 +327,11 @@ fi
 
 # [ -s database/$INPUTBASENAME/screenshot.png ] || echo "Screenshot is empty" && exit 1
 
-echo "==========================================="
-
+echo "=============== screen shot ============================"
+echo "database/$INPUTBASENAME/screenshot.png"
+ls "database/$INPUTBASENAME/screenshot.png"
+cat "database/$INPUTBASENAME/screenshot.png"
+echo "========================================================"
 # If everything succeeded until here, then put together a "database file" and display it
 
 mkdir -p database/$INPUTBASENAME
@@ -441,6 +444,7 @@ sudo chmod a+x appstreamcli-x86_64.AppImage
   INPUTBASENAME=${INPUTBASENAME##*/} # Remove path up to last /
   # echo "Exporting $INPUTBASENAME to apps/$INPUTBASENAME.md for Jekyll"
   ls -la
+  ls -la apps/*
   touch apps/$INPUTBASENAME.md
   echo "---" > apps/$INPUTBASENAME.md
   echo "layout: app" >> apps/$INPUTBASENAME.md
