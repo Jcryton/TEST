@@ -444,7 +444,7 @@ sudo chmod a+x appstreamcli-x86_64.AppImage
   INPUTBASENAME=${INPUTBASENAME##*/} # Remove path up to last /
   # echo "Exporting $INPUTBASENAME to apps/$INPUTBASENAME.md for Jekyll"
   ls -la
-  ls -la apps/*
+  ls -la apps
   touch apps/$INPUTBASENAME.md
   echo "---" > apps/$INPUTBASENAME.md
   echo "layout: app" >> apps/$INPUTBASENAME.md
