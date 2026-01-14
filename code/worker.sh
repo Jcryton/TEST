@@ -501,7 +501,8 @@ sudo chmod a+x appstreamcli-x86_64.AppImage
   echo ===
   cat data/$INPUTBASENAME
   echo ===
-  OBS_USER= ironwail ## $(grep "^http.*://download.opensuse.org/repositories/home:/" data/$INPUTBASENAME | cut -d "/" -f 6 | sed -e 's|:||g')
+  OBS_USER=ironwail ## $(grep "^http.*://download.opensuse.org/repositories/home:/" data/$INPUTBASENAME | cut -d "/" -f 6 | sed -e 's|:||g')
+  echo ===$OBS_USER
   # BB_USER=$(grep "^https://bitbucket.org.*" data/$INPUTBASENAME | cut -d '/' -f 4 )
   # BB_REPO=$(grep "^https://bitbucket.org.*" data/$INPUTBASENAME | cut -d '/' -f 5 )
   if [  x"$GH_USER" == x"" ] ; then
