@@ -55,13 +55,11 @@ fi
 # This may get replaced by mounting the file with fuse httpfs
 # if we find an implementation that supports https
 echo "URL: $URL"
-ls -la
 
 FILENAME=BeingTested.AppImage
 if [ ! -e "$FILENAME" ] ; then
   wget -c -nv "$URL" -O "$FILENAME" --no-check-certificate
 fi
-FILENAME=ironwail-20250213-0.8.0-x86_64.AppImage
 
 # Check the type of the AppImage
 TYPE=""
