@@ -330,7 +330,7 @@ fi
 echo "=============== screen shot ============================"
 echo "database/$INPUTBASENAME/screenshot.png"
 ls "database/$INPUTBASENAME/screenshot.png"
-cat "database/$INPUTBASENAME/screenshot.png"
+### cat "database/$INPUTBASENAME/screenshot.png"
 echo "========================================================"
 # If everything succeeded until here, then put together a "database file" and display it
 
@@ -463,11 +463,11 @@ sudo chmod a+x appstreamcli-x86_64.AppImage
   fi
   # License
   AS_LICENSE=""
-  DT_LICENSE=""
+  DT_LICENSE="yioyoyoyo"
   if [ -f database/$INPUTBASENAME/*appdata.xml ] ; then
     AS_LICENSE=$(cat database/$INPUTBASENAME/*appdata.xml | xmlstarlet sel -t -m "/component/project_license" -v .) || true
   fi
-  DT_LICENSE=$(grep -r "X-AppImage-Payload-License=.*" database/$INPUTBASENAME/*.desktop | cut -d '=' -f 2)
+  ### DT_LICENSE=$(grep -r "X-AppImage-Payload-License=.*" database/$INPUTBASENAME/*.desktop | cut -d '=' -f 2)
   if [ x"$AS_LICENSE" != x"" ] ; then
     echo "license: $AS_LICENSE" >> apps/$INPUTBASENAME.md
   elif [ x"$DT_LICENSE" != x"" ] ; then
