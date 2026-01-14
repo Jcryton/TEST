@@ -1,0 +1,17 @@
+[Desktop Entry]
+Comment=Ironwail is an alternative client for id Software's Quake I
+Categories=Game;Shooter;
+Exec=ironwail
+Icon=ironwail
+Name=Ironwail
+StartupNotify=true
+Terminal=false
+Type=Application
+Keywords=quake;ironwail;first;person;shooter;multiplayer;
+
+[AppImageHub]
+# Dear upstream developer, please include update information in your AppImage
+# (e.g., with appimagetool -u) so that users can easily update the AppImage
+X-AppImage-Signature=directory '/home/runner/.gnupg' created keybox '/home/runner/.gnupg/pubring.kbx' created Signature made Thu Feb 13 12:51:51 2025 UTC                using RSA key 6E9137E3B0FE3FDC67D70F2ECDC41982C027BAAA Can't check signature: No public key 
+X-AppImage-Type=2
+X-AppImage-Architecture=x86_64
