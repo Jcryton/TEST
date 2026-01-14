@@ -4,7 +4,7 @@ on:
   push:
     branches:
       # Do not build PRs twice
-      - 'master'
+      - 'main'
     paths:
       - 'data/**'
   pull_request:
